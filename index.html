@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule sua Nota</title>
+
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container-wrapper">
+         <div class="caixas">
+            <div class="caixa">
+                <div class="titulo">
+                    <p class="title">
+                        Nota 1
+                    </p>
+                </div>
+                <div class="conteudo">
+                    <div class="av">
+                        <p class="notas">
+                            Av 1
+                        </p>
+                        <input class="entrada" type="number" min="0" max="10" id="ponto1">
+                    </div>
+                    <div class="av">
+                        <p class="notas">
+                            Av 2
+                        </p>
+                        <input class="entrada" type="number" min="0" max="10" id="ponto2">                        
+                    </div>
+                    <div class="av">
+                        <p class="notas">
+                            Av 3
+                        </p>
+                        <input class="entrada" type="number" min="0" max="10" id="ponto3">                        
+                    </div>
+                </div>
+            </div>
+            <div class="caixa">
+                <div class="titulo">
+                    <p class="title">
+                        Nota 2
+                    </p>
+                </div>
+                <div class="conteudo">
+                    <div class="av">
+                        <p class="notas">
+                            Av 4
+                        </p>
+                        <input class="entrada" type="number" min="0" max="9" id="ponto9">                        
+                    </div>
+                    <div class="av">
+                        <p class="notas">
+                            APS
+                        </p>
+                        <input class="entrada" type="number" min="0" max="1" id="ponto">                        
+                    </div>
+                </div>
+            </div>
+            <div class="caixa">
+                <div class="titulo">
+                    <p class="title">
+                        Média
+                    </p>
+                </div>
+                <div class="conteudo-final">
+                    <div class="resultado" id="result">
+                        
+                    </div>
+                    <div class="d-grid gap-2 col-2 mx-auto" style="margin-top: 4px;">
+                    <button id="somar" onclick="somarValores()" type="button" class="btn btn-dark">Calcular</button>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <script src="Bootstrap/bootstrap.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>
