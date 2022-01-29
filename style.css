@@ -90,7 +90,7 @@ body {
     align-content: space-around;
 }
 
-.entrada {
+.entrada, .entrada2 {
     display: flex;
     align-self: center;
     min-width: 80px;
@@ -125,10 +125,53 @@ body {
 
 .btn:hover {
     background-color: #F27C0E;
-    transition: 1s;
+    transition: 0.5s;
     color:black;
-    font-weight: bold;
 }
+
+.add {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.adc, .remove {
+    height: 17px;
+    width: 17px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove {
+    margin-top: 2px;
+}
+
+.adc:hover, .remove:hover, .linktree:hover {
+    background-color: #F27C0E;
+    transition: 0.5s;
+    color:black;
+}
+
+.rodape {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.linktree {
+    color: black;
+    padding-left: 4px;
+}
+
 
 @media screen and (max-width: 580px) {
     body {  
@@ -138,7 +181,7 @@ body {
     flex-direction: column;
     /*height: auto;
     width: auto;*/
-}
+    }
     .entrada{
         width: 100%;
     }
@@ -187,4 +230,24 @@ body {
         justify-content: space-around;
         align-content:center;
     }
+
+    .add {
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: center;
+    }
+    .adc, .remove {
+        height: 30px;
+        width: 30px;
+        font-size:x-large;
+    }
+    
+    .remove {
+        margin-left: 5px;
+    }
+    
 }
