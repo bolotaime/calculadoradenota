@@ -1,14 +1,7 @@
-var foo = document.querySelector(".entrada");
+// This is an old version, for a more recent version look at
+  // https://jsfiddle.net/DRSDavidSoft/zb4ft1qq/2/
+  function maxLengthCheck(object) {
+    if (object.value.length > object.maxLength)
+      object.value = object.value.slice(0, object.maxLength, object.max)
 
-//Cria uma função que será usando no keyup e no blue
-var f = maxNumber(10);
-
-foo.addEventListener('keyup', f);
-
-function maxNumber(max){
-    if(parseFloat(this.value>max)){
-        return 10;
-    }else{
-        return this.value;
-    }
-}
+  }

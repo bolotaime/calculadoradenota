@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcule sua Nota</title>
 
-    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     
@@ -28,19 +27,19 @@
                         <p class="notas">
                             Av 1
                         </p>
-                        <input class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto1">
+                        <input oninput="maxLengthCheck(this)" class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto1">
                     </div>
                     <div class="av">
                         <p class="notas">
                             Av 2
                         </p>
-                        <input class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto2">                        
+                        <input oninput="maxLengthCheck(this)" class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto2">                        
                     </div>
                     <div class="av">
                         <p class="notas">
                             Av 3
                         </p>
-                        <input class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto3">                        
+                        <input oninput="maxLengthCheck(this)" class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto3">                        
                     </div>
                     <div class="add">
                         <button class="adc">+</button>
@@ -59,13 +58,13 @@
                         <p class="notas">
                             Av 4
                         </p>
-                        <input class="entrada" type="number" min="0" max="9" maxlength="1" id="ponto9">                        
+                        <input oninput="maxLengthCheck(this)" class="entrada" type="number" min="0" max="9" maxlength="1" id="ponto9">                        
                     </div>
                     <div class="av">
                         <p class="notas">
                             APS
                         </p>
-                        <input class="entrada" type="number" min="0" max="1" maxlength="1" id="ponto">                        
+                        <input oninput="maxLengthCheck(this)" class="entrada" type="number" min="0" max="1" maxlength="1" id="ponto">                        
                     </div>
                 </div>
             </div>
@@ -88,7 +87,7 @@
     </div>
     <div class="rodape">Feito por <a class="linktree" href="https://linktr.ee/_jartas">Jarthur</a></div>
     <script src="/js/calculadora.js"></script>
-    <script src="/js/caracteres.js"></script>
+    <script src="/js/caracter.js"></script>
     <!-- <script src="/js/caracteres2.js"></script>-->
 </body>
 </html>
