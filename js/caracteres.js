@@ -1,4 +1,4 @@
-var foo = document.querySelector("input");
+var foo = document.querySelector(".entrada");
 
 //Cria uma função que será usando no keyup e no blue
 var f = maxNumber(10);
@@ -11,7 +11,7 @@ function maxNumber(max) {
     
     return function () {
         //Para evitar conflito entre o blur e o keyup
-        if (running) return;
+     if (running) return;
         
         //Bloqueia multiplas chamadas do blur e keyup
         running = false;
@@ -25,5 +25,4 @@ function maxNumber(max) {
         running = false;
     };
 }
-
 //https://pt.stackoverflow.com/questions/284860/max-length-em-input-type-number-html
