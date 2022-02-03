@@ -22,7 +22,7 @@
                         Nota 1
                     </p>
                 </div>
-                <div class="conteudo">
+                <div id="conteudo" class="conteudo">
                     <div class="av">
                         <p class="notas">
                             Av 1
@@ -41,11 +41,11 @@
                         </p>
                         <input oninput="maxLengthCheck(this)" class="entrada" type="number" min="0" max="10" maxlength="2" id="ponto3">                        
                     </div>
-                    <div class="add">
-                        <button class="adc">+</button>
-                        <button class="remove">-</button>
-                    </div>
                 </div>
+                <div class="add">
+                    <button id="insert" type="button" class="adc" onclick="addAv();">+</button>
+                    <button type="button" class="remove" onclick="removeAv();">-</button>
+                </div>                
             </div>
             <div class="caixa">
                 <div class="titulo">
@@ -88,6 +88,7 @@
     <div class="rodape">Feito por <a class="linktree" href="https://linktr.ee/_jartas">Jarthur</a></div>
     <script src="/js/calculadora.js"></script>
     <script src="/js/caracter.js"></script>
+    <script src="/js/add.js"></script>
     <!-- <script src="/js/caracteres2.js"></script>-->
 </body>
 </html>
