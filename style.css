@@ -131,6 +131,7 @@ body {
 
 .add {
     padding-top: 5px;
+    padding-bottom: 2px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -147,10 +148,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.remove {
-    margin-top: 2px;
 }
 
 .adc:hover, .remove:hover, .linktree:hover {
