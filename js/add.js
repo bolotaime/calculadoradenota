@@ -26,7 +26,7 @@ function removeAv(){
     ultimoAv--;
 
     if(ultimoAv == 1){
-        alert("Jumento, tem queter pelo menos uma avaliação");
+        alert("Você precisa ter pelo menos uma avaliação na Nota 1.");
         return
     }
 

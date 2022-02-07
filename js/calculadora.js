@@ -19,7 +19,7 @@ function somarValores(){
     var a5 = document.getElementById("ponto").value; //nota da avaliação 5
 
     if((nota1Valid == false) || (a4 == "" && a5 == "")){
-        document.getElementById("result").innerHTML = "Seu BURRO bote alguma nota no nota 1 e alguma no nota 2";
+        document.getElementById("result").innerHTML = "Preencha as notas para calcular sua média.";
         return
     }
 
