@@ -42,7 +42,7 @@ function somarValores(){
     var proporcao2 = 0.6; // peso da N2
     var multiplicacao2 = parseFloat(soma2) * proporcao2; // na N2 nao é necessario fazer média, apenas somar A4+A5 e multiplicar pelo peso
     var soma3 = parseFloat(multiplicacao1) + parseFloat(multiplicacao2); // depois somar as duas notas N1+N2
-    var diferença = 6 - parseFloat(soma3);
+    var diferença = 12 - parseFloat(soma3);
     if (soma3 >= 6){ // se soma3 /\ (calculo da var acima) for maior ou igual a 6, vai aparecer o alerta de aprovado abaixo
         document.getElementById("result").innerHTML = "Aprovado! <br> Sua média final é " + soma3 + "." // esse alerta se a soma3 for maior ou igual a 6
     } else { //else seria "se nao for aquilo, vai ser isso", nesse caso: se nao for maior ou igual a 6, vai ser reprovado)
